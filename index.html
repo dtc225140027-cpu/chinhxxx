@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lò Sấy Nông Sản</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>HỆ THỐNG LÒ SẤY NÔNG SẢN</h1>
+
+        <div class="card">
+            <h2>Trạng Thái Hệ Thống</h2>
+
+            <p>Nhiệt độ tầng 1: <span id="temp1">60</span> °C</p>
+            <p>Độ ẩm tầng 1: <span id="hum1">45</span> %</p>
+
+            <p>Nhiệt độ tầng 2: <span id="temp2">55</span> °C</p>
+            <p>Độ ẩm tầng 2: <span id="hum2">40</span> %</p>
+
+            <p>Nhiệt độ tầng 3: <span id="temp3">50</span> °C</p>
+            <p>Độ ẩm tầng 3: <span id="hum3">35</span> %</p>
+        </div>
+
+        <div class="card">
+            <h2>Thiết Bị</h2>
+
+            <p>Heater: <span id="heater">ON</span></p>
+            <p>Quạt: <span id="fan">ON</span></p>
+            <p>Chế độ: <span id="mode">AUTO</span></p>
+        </div>
+
+        <div class="card">
+            <h2>Điều Khiển</h2>
+
+            <button onclick="startSystem()">START</button>
+            <button onclick="stopSystem()">STOP</button>
+
+            <button onclick="setAuto()">AUTO</button>
+            <button onclick="setManual()">MANUAL</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
